@@ -19,6 +19,7 @@ function App() {
     )
 }
 
+
 const Home = () => {
     let [search, updateSearch] = useState("");
     let api = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${search}`;
@@ -41,6 +42,7 @@ const Home = () => {
             <Navbar />
             <div className="container">
                 <div className="row">
+
                     <Search updateSearch={updateSearch} />
                 </div>
                 <div className="row">

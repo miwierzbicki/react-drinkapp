@@ -1,4 +1,4 @@
-import styles from "./Card.module.scss";
+
 import React from "react";
 import App from "../../App";
 import { Link } from "react-router-dom";
@@ -8,7 +8,9 @@ const Card = ({ drinks, idDrink }) => {
     let display;
     const cardWidth = {
         width: "20rem",
-        margin: "0.4rem"
+        margin: "0.4rem",
+        textDecoration: "none",
+        color: "black"
     };
 
 
@@ -16,9 +18,7 @@ const Card = ({ drinks, idDrink }) => {
     if (drinks) {
        display = drinks.map((x)=>{
         let {idDrink, strDrink, strDrinkThumb} = x;
-        // wybranyDrink = drinks.find((x)=>{x.idDrink===chosenId})
 
-        //drinks.filter(arg)
         return (
             <Link
                 to={`${idDrink}`}
@@ -29,9 +29,8 @@ const Card = ({ drinks, idDrink }) => {
                         alt="thumbnail"
                     />
                     <div className="card-body">
-                        <h5 className="card-title">{strDrink}</h5>
-                        <p className="card-text">drink id: {idDrink}</p>
-                        <a href="#" className="btn btn-primary" >Przepis</a>
+                        <h3 className="card-title">{strDrink}</h3>
+
                     </div>
             </Link>
         );
