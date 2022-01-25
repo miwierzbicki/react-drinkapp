@@ -1,5 +1,12 @@
-# Inicjacja
+# drinkApp
 
-### `npm start`
+- Wyszukiwaine drinka po nazwie
+- Wyświetlanie zdjęć drinków w widoku karty
+- Routing (odrębne strony dla drinków)
+- Wyświetlanie czy jest alkoholowy czy nie 
+- Szukanie po tym czy jest alkoholowy czy nie
 
-Wersja alpha
+
+Użyte technologie:
+- Front: React
+- Backend: Dane z API 
