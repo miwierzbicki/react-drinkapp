@@ -31,6 +31,11 @@ const Home = () => {
             updateFetchedData(data);
         })();
     }, [api]);
+
+
+    const justifyCardDetails = {
+        justifyContent:"center"
+    }
     return (
         <div className="App">
             <Navbar />
@@ -43,11 +48,12 @@ const Home = () => {
                         className="col
                   "
                     >
-                        <div className="row">
+                        <div className="row" style={justifyCardDetails}>
                                 <Router>
                                 <Routes>
 
                                     <Route path="/" element={<Card drinks={drinks}/>}/>
+
                                     <Route path="/:id" element={<CardDetails drinks={drinks}/>}/>
                                 </Routes>
                             </Router>

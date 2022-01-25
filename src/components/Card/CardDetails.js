@@ -6,37 +6,43 @@ import bootstrap from "bootstrap";
 const CardDetails = ({drinks}) => {
 
     const cardWidth = {
-        width: "50rem",
+        width: "30rem",
         margin: "0.4rem",
     };
 
-    const imgProps = {
 
-    }
 
     let {id} = useParams();
     const chosenDrink = drinks.find((x)=>x.idDrink===id);
     console.log(drinks);
     return (
-        // <div>Tutaj info szczegolowe, id: {chosenDrink.strDrink}
-        // <img src={chosenDrink.strDrinkThumb} alt="" />
-        // <p>{chosenDrink.strInstructions}</p>
-        // </div>
-        <div className="card px-0" style={cardWidth}>
-            <img
-                src={chosenDrink.strDrinkThumb}
-                alt="drink"
-                className="card-img-top"
-            />
-            <div className="card-body">
-                <h5 className="card-title">{chosenDrink.strDrink}</h5>
-                <p className="card-text">{chosenDrink.strInstructions}</p>
-            </div>
-            <ul className="list-group-item">{chosenDrink.strIngredient1}</ul>
-            <div className="card-body">
-                <a href="#" className="card-link">
-                    Link
-                </a>
+
+
+        <div className="card px-0">
+            <div className="row g-0">
+                <div className="col-md-4">
+                    <img
+                        src={chosenDrink.strDrinkThumb}
+                        alt=""
+                        className="img-fluid rounded-start"
+                    />
+                </div>
+                <div className="col md-8">
+                    <div className="card-body">
+                        <h3 className="card-title">{chosenDrink.strDrink}</h3>
+                        Typ:
+                        {chosenDrink.strAlcoholic === "Alcoholic" ? (
+                            <span className="badge bg-danger">
+                                {chosenDrink.strAlcoholic}
+                            </span>
+                        ) : (
+                            <span className="badge bg-success">
+                                {chosenDrink.strAlcoholic}
+                            </span>
+                        )}
+                        <p className="card-text">costam</p>
+                    </div>
+                </div>
             </div>
         </div>
     );
