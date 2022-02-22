@@ -14,6 +14,12 @@ Features:
 ### Technologies used: 
 React, Bootstrap
 
+## Screenshots
+![Home screen](https://user-images.githubusercontent.com/50588703/155220713-ad310bf3-e6cb-4ab6-8614-d5918a310fb1.png)
+![Detailed card view](https://user-images.githubusercontent.com/50588703/155220772-f13b250d-aaaf-4929-a615-f42beaf2ecff.png)
+
+
+
 ## Installation
 - `git clone https://github.com/miwierzbicki/react-drinkapp.git`
 - `npm start`
