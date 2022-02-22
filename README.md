@@ -1,12 +1,19 @@
 # drinkApp
 
-- Wyszukiwaine drinka po nazwie
-- Wyświetlanie zdjęć drinków w widoku karty
-- Routing (odrębne strony dla drinków)
-- Wyświetlanie czy jest alkoholowy czy nie 
-- Szukanie po tym czy jest alkoholowy czy nie
+The project was created during a course at the Wrocław University of Technology.
+
+Data retrieved from API [thecocktaildb.com](https://www.thecocktaildb.com/api.php)
+
+Features: 
+- Search by name
+- Card view for the selected drink
+- Detailed information in card view (instructions, ingredients, type, glass)
+- React routing
 
 
-Użyte technologie:
-- Front: React
-- Backend: Dane z API 
+### Technologies used: 
+React, Bootstrap
+
+## Installation
+- `git clone https://github.com/miwierzbicki/react-drinkapp.git`
+- `npm start`
